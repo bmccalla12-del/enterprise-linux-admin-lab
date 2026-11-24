@@ -1,0 +1,57 @@
+# Lab 2-3: Identify System and Kernel Information
+
+## Objective
+Identify basic Linux system and kernel information and examine processor specifications.
+
+## Commands Used
+
+| Command | Purpose |
+|---|---|
+| `uname -a` | Displays comprehensive system and kernel information |
+| `lscpu` | Displays processor architecture and CPU information |
+
+## Procedure
+
+### Step 1: Display System and Kernel Information
+
+```bash
+uname -a
+```
+
+**Explanation:** Displays information about the running system, including:
+- Kernel name.
+- Hostname.
+- Kernel release.
+- Kernel version.
+- Machine hardware architecture.
+- Operating system information.
+
+### Step 2: Examine Processor Information
+
+```bash
+lscpu
+```
+
+**Explanation:** Displays information about the CPU and its architecture.
+
+Pay particular attention to:
+- Architecture.
+- CPU(s).
+- Thread(s) per core.
+- Core(s) per socket.
+- Socket(s).
+- CPU model name.
+- Virtualization support.
+
+## Results and Observations
+
+Record:
+- Your kernel release and version.
+- Your system architecture.
+- Your processor model.
+- The number of CPUs, cores, and threads reported.
+
+## Key Takeaways
+- The kernel manages communication between hardware and software.
+- `uname` provides information about the running kernel and system.
+- `lscpu` provides detailed processor information.
