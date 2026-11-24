@@ -1,0 +1,65 @@
+# Lab 2-1: Navigate Linux Directory Tree
+
+## Objective
+Practice navigating the Linux directory structure, identifying the current working directory, and displaying hidden files.
+
+## Commands Used
+
+| Command | Purpose |
+|---|---|
+| `pwd` | Displays the current working directory |
+| `ls -la` | Lists all files, including hidden files, in long format |
+| `cd /etc` | Changes the current directory to `/etc` |
+| `cd -` | Returns to the previous working directory |
+
+## Procedure
+
+### Step 1: Identify the Current Directory
+
+```bash
+pwd
+```
+
+**Explanation:** Displays the absolute path of the current working directory.
+
+### Step 2: Display All Files
+
+```bash
+ls -la
+```
+
+**Explanation:**
+- `-l`: Displays files in long format, including permissions, ownership, size, and modification date.
+- `-a`: Includes hidden files and directories.
+
+### Step 3: Navigate to `/etc`
+
+```bash
+cd /etc
+pwd
+```
+
+**Explanation:** Changes the working directory to `/etc` and verifies the location.
+
+### Step 4: Return to the Previous Directory
+
+```bash
+cd -
+pwd
+```
+
+**Explanation:** Returns to the previous working directory and confirms the location.
+
+## Results and Observations
+
+Record:
+- The original working directory.
+- Examples of hidden files displayed by `ls -la`.
+- The directory displayed after changing to `/etc`.
+- The directory displayed after returning to the previous location.
+
+## Key Takeaways
+- Linux uses a hierarchical directory structure.
+- `pwd` identifies your current location.
+- Hidden files typically begin with a period (`.`).
+- `cd` is used to navigate between directories.
