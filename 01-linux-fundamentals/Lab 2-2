@@ -1,0 +1,70 @@
+# Lab 2-2: Miscellaneous Tasks
+
+## Objective
+Learn how to identify terminal sessions, examine system uptime and processor load, and locate Linux commands.
+
+## Commands Used
+
+| Command | Purpose |
+|---|---|
+| `tty` | Displays the terminal device associated with the current session |
+| `uptime` | Displays system uptime, logged-in users, and load averages |
+| `which vgs` | Displays the executable path found through PATH |
+| `whereis vgs` | Searches for binary, source, and manual-page locations |
+| `type vgs` | Identifies how the shell interprets the command |
+
+## Procedure
+
+### Step 1: Identify the Current Terminal
+
+```bash
+tty
+```
+
+**Explanation:** Displays the terminal device file associated with the current session.
+
+Open additional terminal sessions and run `tty` in each one. Compare the results.
+
+### Step 2: Examine System Uptime
+
+```bash
+uptime
+```
+
+**Explanation:** Displays:
+- Current system time.
+- How long the system has been running.
+- Number of logged-in users.
+- System load averages.
+
+The three load averages represent the system load over approximately 1, 5, and 15 minutes.
+
+### Step 3: Locate the `vgs` Command
+
+```bash
+which vgs
+whereis vgs
+type vgs
+```
+
+**Explanation:**
+- `which` searches the directories listed in the PATH environment variable.
+- `whereis` searches for binary, source, and manual-page files.
+- `type` identifies whether the command is an executable, alias, function, or shell builtin.
+
+## Results and Observations
+
+Record:
+- The terminal device reported by each session.
+- The system uptime and load averages.
+- The location of `vgs`, if installed.
+- Any differences between the output of `which`, `whereis`, and `type`.
+
+## Key Takeaways
+- Linux supports multiple terminal sessions.
+- `tty` identifies the terminal device associated with a session.
+- `uptime` provides a quick overview of system activity.
+- Different commands can be used to locate and identify executables.
+
+## Troubleshooting
+If `vgs` cannot be found, record the error. The command may not be installed or available in your system's PATH.
