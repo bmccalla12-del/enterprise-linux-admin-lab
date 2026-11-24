@@ -1,1 +1,13 @@
 
+### Issue: mandb Cannot Create Index Cache
+
+**Problem:** Running mandb produced an error
+indicating it could not create the index cache.
+
+**Cause:** Insufficient permissions to update
+the system-wide manual-page cache.
+
+**Resolution:**
+
+```bash
+sudo mandb
