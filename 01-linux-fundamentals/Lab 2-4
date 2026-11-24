@@ -1,0 +1,65 @@
+# Lab 2-4: Use Help
+
+## Objective
+Learn how to use Linux manual pages and command-line utilities to locate documentation and understand commands.
+
+## Commands Used
+
+| Command | Purpose |
+|---|---|
+| `man uname` | Opens the manual page for `uname` |
+| `man 5 shadow` | Opens section 5 documentation for the shadow file format |
+| `apropos ext4` | Searches manual-page descriptions for the keyword `ext4` |
+| `man -k ext4` | Searches manual-page descriptions for the keyword `ext4` |
+| `whatis group` | Displays a brief description of a command or manual-page entry |
+
+## Procedure
+
+### Step 1: View the `uname` Manual
+
+```bash
+man uname
+```
+
+**Explanation:** Opens the manual page for `uname`. Browse the headings to understand the command's available options and usage.
+
+### Step 2: View the Shadow File Manual
+
+```bash
+man 5 shadow
+```
+
+**Explanation:** Opens the manual page for the shadow file format.
+
+The number `5` specifies manual section 5, which covers file formats and conventions.
+
+### Step 3: Search for ext4 Documentation
+
+```bash
+apropos ext4
+man -k ext4
+```
+
+**Explanation:** Both commands search manual-page descriptions for entries related to `ext4`.
+
+### Step 4: Look Up the Group Manual Entry
+
+```bash
+whatis group
+```
+
+**Explanation:** Displays a short description of matching manual-page entries for `group`.
+
+## Results and Observations
+
+Record:
+- The main sections found in the `uname` manual.
+- What information the `shadow` manual provides.
+- Examples of manual pages returned by the `ext4` searches.
+- The description returned by `whatis group`.
+
+## Key Takeaways
+- Linux includes built-in documentation through manual pages.
+- Manual sections categorize different types of documentation.
+- `apropos` and `man -k` search manual-page descriptions.
+- `whatis` provides brief descriptions of manual entries.
